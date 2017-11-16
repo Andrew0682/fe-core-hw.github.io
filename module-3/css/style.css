@@ -1,0 +1,135 @@
+body {
+  margin: 0px;
+  background: url(http://www.newtravelnsk.ru/wp-content/uploads/2013/11/45655946_428.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(38, 53, 85);
+  padding-left: 720px;
+  padding-right: 720px;
+  padding-top: 240px;
+  padding-bottom: 541px;
+  width: 480px;
+  height: 1390px;
+}
+
+#wrapper {
+	background-color: white;
+	box-sizing: border-box;
+	width: 480px;
+	height: 1390px;
+	margin: 40px;
+    padding: 37px;
+ }
+
+ #w1 {display: inline;
+
+ }
+
+
+#Agency_Profile {
+  font-size: 17px;
+  font-family: "PathwayGothicOne";
+  color: rgb(38, 53, 85);
+  line-height: 0.9;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+  padding-top: 40px;
+}
+
+  .Gellentesque_ {
+  font-size: 14px;
+}
+.Lorem_{
+  line-height: 1.417;
+
+}
+
+.Our_Principles {
+  font-size: 17px;
+  font-family: "PathwayGothicOne";
+  line-height: 4.2;
+  text-transform: uppercase;
+  
+}
+.Pellentesque_ {
+  font-size: 14px;
+  line-height: 1.357;
+}
+  
+.Quisque_{
+  line-height: 1.417;
+  
+}
+
+.Aellentesque_ {
+  font-size: 14px;
+  line-height: 1.357;
+  
+}
+.Fuisque_ {
+  line-height: 1.417;
+  
+}
+
+.Grellentesque_ {
+  font-size: 14px;
+  line-height: 1.357;
+ 
+}
+hr {
+  size: 2px;
+
+}
+.Yisque_ {
+  line-height: 1.417;
+  padding-bottom: 20px;
+ 
+}
+
+.What_We {
+  font-size: 17px;
+  font-family: "PathwayGothicOne";
+  text-transform: uppercase;
+  line-height: 3.2;
+  
+}
+.Cum_sociis{
+  font-size: 14px;
+  line-height: 1.357;
+  
+}
+.Sed_dign {
+  line-height: 1.417;
+  
+  }
+
+
+#left {  display: inline-block;
+  vertical-align: bottom;
+  width: 160px;
+  float: left;
+  padding-left: 30px;
+  font-weight: bold;
+  line-height: 1.629;
+
+}
+
+#right { 
+  float: right;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 200px;
+  padding-right: 12px;
+  font-weight: bold;
+  line-height: 1.629;
+
+
+}
+
+.marker {
+	  list-style-type: none;
+}
+
