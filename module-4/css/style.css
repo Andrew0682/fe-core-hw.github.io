@@ -1,0 +1,270 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper { 
+    width: 100%; 
+    background: url(https://placeimg.com/1000/1000/nature?t=1511349099668);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .main {
+    margin: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 1024px;
+    height: 1300px;
+  }
+
+  .article {
+    width: 734px;
+    height: auto;
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    padding:120px 0 75px 60px;
+  }
+
+  .aside_right {
+    box-sizing: border-box;
+    width: 290px;
+    height: auto;
+    margin: 0;
+    float: right;
+    padding:120px 60px 75px 0px;
+
+  }
+
+  .article_title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+    line-height: 1.2;
+  }
+
+  .article_img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+   .article_Gellentesque {
+    font-size: 15px;
+    width: 680px;
+    margin-bottom: 20px;
+    line-height: 1.267;
+    font-family:"Arial", sans-serif;
+  }
+
+
+  .article_text {
+    line-height: 1.462;
+    font-size: 13px;
+    font-family:"Arial", sans-serif;
+    width: 260px;
+    float: right;
+    margin-right: 30px;
+  } 
+
+  .article_text_2 {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    line-height: 1.462;
+    font-size: 13px;
+    font-family:"Arial", sans-serif;
+  }
+
+  .What_We {
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  hr { 
+    border: 1px solid silver;
+  }
+
+  .article_text_3 {
+    width: 630px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+  }
+
+    .article_text_4 {
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 1.462;
+    width: 640px;
+  }
+
+   .article_list {
+    columns: 2;
+    list-style-type: none;
+    margin-top: 35px;
+  }
+
+  .article_item:nth-last-child(n) {
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    line-height: 1.52;
+    font-family: "Arial";
+  }
+
+  .article_item::before {
+    content: '\2192';
+    color: #38afe5;
+    padding-right: 15px;
+  }
+
+ .aside_title {
+    width: 230px;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+.aside_item {
+    width: 170px;
+    height: auto;
+  }
+  
+  ul {
+    counter-reset: section;                
+    list-style-type: none;
+    position: relative;
+  }
+
+  .aside_item::before {
+    display: inline-block;
+    counter-increment: section;  
+    content: counters(section, "article-title") " ";
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    
+  }
+
+  .aside_Pellentesque {
+    margin-top: 50px;
+    margin-bottom: 21px;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+    margin-left: 40px;
+    width: 170px;
+  }
+
+  .aside_text {
+    margin-left: 40px;
+    width: 180px;
+    height: auto;
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 1.462;
+    text-align: left;
+    
+  }
+
+    .aside_Aellentesque {
+    margin-top: 31px;
+    margin-bottom: 21px;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+    width: 170px;
+    margin-left: 40px;
+  }
+
+
+  .aside_Grellentesq {
+    margin-top: 31px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+    width: 170px;
+    margin-left: 40px;
+    
+  }
+
+   .aside_item:last-of-type {
+    margin-bottom: 41px;
+  }
+
+    .Testimonial {
+    margin-top: 60px;
+    margin-right: 60px;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+  }
+
+  .Testimonial_blok{
+  width: 190px;
+  height: 190px;
+  background-color: #dfdcdc;
+  border-radius: 10px;
+  padding: 23px;
+  font-size: 15px;
+  font-family: "Arial";
+  line-height: 1.267;
+  margin-right: 60px;
+  margin-top: 25px;
+  position: relative;
+}
+.aside_quote {
+  width: 175px;
+  height: 150px;
+  text-align: left;
+   font-size: 15px;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.Testimonial_blok:after {
+  content: '';
+  position: absolute;
+  border: 20px solid;
+  border-top-color: #dfdcdc;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px; 
+  border-bottom-color: #fff;
+  border-right-color:#fff;
+  border-left-color: #fff;
+}
+
+
+.aside_quote:before,.aside_quote:after {
+  content: "\201C";
+}
+
+.Mark_Johnson {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 13.33px;
+  font-family: Arial;
+  line-height: 1.425;
+}
+
+.Director_of {
+  font-size: 13px;
+  font-family: "Arial";
+  color: #4e5050;
+  line-height: 1.462;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  } 
