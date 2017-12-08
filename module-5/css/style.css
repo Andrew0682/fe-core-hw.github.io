@@ -1,0 +1,412 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper { 
+    width: 1920px;
+    height: 2112px;
+    background: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+    background-repeat: no-repeat;
+  }
+  main {
+    margin: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    top: 235px;
+    width: 1024px;
+    height: 1171px;
+    position: relative;
+  }
+/* Page header */
+
+/* Navigation */
+.Home {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 530px;
+  top: 100px;
+  height: 16.125px;
+  z-index: 2;
+}
+.About {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+ color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 640px;
+  top: 100px;
+  height: 16.125px;
+  z-index: 3;
+}
+.Gallery {
+   font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 745px;
+  top: 100px;
+  height: 16.14px;
+  z-index: 4;
+}
+.Journey {
+  font-size: 60px;
+  font-family: "Dorsa";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+  left: 30px;
+  top: 35px;
+  height: 40.865px;
+  z-index: 5;
+}
+.Tours {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1065px;
+  top: 100px;
+  height: 16.144px;
+  z-index: 6;
+}
+.Blog {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1174px;
+  top: 100px;
+  height: 16.132px;
+  z-index: 7;
+}
+.Contact {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1264px;
+  top: 100px;
+  height: 16.14px;
+  z-index: 8;
+}
+.logo {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 891px;
+  top: 46px;
+  width: 138px;
+  height: 138px;
+  z-index: 9;
+}
+.logo:hover {
+  background-color: #b3c6ff;
+  transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+a:hover { 
+  color: rgb(38, 53, 85);
+}
+a:active {
+  color: #993399;
+}
+
+/* Navigation_Menu */
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.sub_nav {
+    display: none;
+    position: absolute;
+    width: 66px;
+    height: 84px;
+    top: 136px;
+    left: 650px;
+    background-color: white;
+    text-align: center;
+}
+ul.sub_nav:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff; transparent;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+ul.sub_nav > li {
+    display: block;
+}
+ul.sub_nav > li > a {
+    display: block;
+    color: rgb(107, 116, 136);
+    padding-bottom: 10px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul.nav > li:hover > ul.sub_nav {
+    display: block;
+}
+.Agency {
+  font-size: 16.667px;
+  font-family: "PathwayGothicOne";
+  color: rgb(107, 116, 136);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  width: 37.792px;
+  height: 11.925px;
+}
+.News {
+  font-size: 16.667px;
+  font-family: "PathwayGothicOne";
+  color: rgb(107, 116, 136);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 673.084px;
+  height: 11.925px;
+}
+.Team {
+  font-size: 16.667px;
+  font-family: "PathwayGothicOne";
+  color: rgb(107, 116, 136);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  width: 25.774px;
+  height: 11.875px;
+}
+/* MAIN */
+.slider {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 226px;
+  height: 60px;
+  position: absolute;
+  top:277px;
+  left: 58px;
+  z-index: 19; 
+}
+h3.caption_blue {
+  font-size: 18px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 77px;
+  top: 350px;
+  height: 24.875px;
+  z-index: 18;
+}
+h3.caption_white {
+  font-size: 14px;
+  font-family: "PathwayGothicOne";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  width: 374px;
+  height: 16.151px;
+  z-index: 17;
+  top: 20px;
+}
+.Top_Destinations {
+  font-size: 31.667px;
+  font-family: "PathwayGothicOne";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 63px;
+  bottom: 455px;
+  height: 21px;
+  z-index: 15;
+}
+.boat_img {
+  position: absolute;
+  left: 58px;
+  top: 58px;
+  width: 902px;
+  height: 579px;
+  z-index: 16;
+}
+/* CONTROLS */
+.controls {
+  position: absolute;
+  top: 500px;
+  left: 101px;
+  z-index: 18;
+}
+
+.btn {
+  float: left;
+  width: 40px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #38afe5;
+}
+
+.prev {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+.prev::before {
+  content: "\2190";
+}
+
+.next {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.next::before {
+  content: "\2192";
+}
+/* CONTAINER */
+.Destinations {
+  width: 902px;
+  margin: auto;
+  background-color: #fff;
+  position: absolute;
+  left: 58px;
+  bottom: 117px;
+}
+
+.card {
+  position: relative;
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card:hover > .card_info {
+  display: block;
+}
+
+.card_img {
+  display: block;
+  width: 288px;
+  height: 270px;
+}
+
+.card_info {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #193149;
+  color: #fff;
+  height: 270px;
+  width: 55%;
+}
+
+.card_title {
+  font-size: 28px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  text-align: center;
+  width: 100%;
+  height: 22px;
+  position: absolute;
+}
+button.card_link {
+  position: absolute;
+  width: 62px;
+  height: 21px;
+  text-transform: uppercase;
+  font-size: 12.5px;
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+  line-height: 1.52;
+  text-align: left;
+  background-color: white;
+  border: 1px solid rgba(159, 150, 150, 0.81);
+  border-radius: 5px;
+  bottom: 20px;
+  right: 13px;
+}
+.card_text {
+  font-size: 13px;
+  font-family: "Arial";
+  color: rgb(203, 198, 198);
+  line-height: 1.462;
+  text-align: center;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+button.To_top_button {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  bottom: 20px;
+
+}
+.To_top_button::before {
+  content: "\2039";
+}
