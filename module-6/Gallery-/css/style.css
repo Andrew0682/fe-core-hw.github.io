@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E0E0E0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+  max-width: 120rem;
+  min-width: 85rem;
+  margin: auto;
+}
+
+/* Page header */
+
+.page_header {
+    position: relative;
+    padding: 6rem 0;
+    padding-left: 4rem;
+  }
+ 
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #b3c6ff;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Menu */
+
+ul.nav {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover { 
+  color: rgb(38, 53, 85);
+}
+a:active {
+  color: #993399;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.sub_nav {
+    display: none;
+    position: absolute;
+    width: 4.2rem;
+    height: 5rem;
+    top: 125px;
+    left: 260px;
+    background-color: white;
+    text-align: center;
+}
+ul.sub_nav:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff; transparent;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+ul.sub_nav > li {
+    display: block;
+}
+ul.sub_nav > li > a {
+    display: block;
+    color: rgb(107, 116, 136);
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+ul.nav > li:hover > ul.sub_nav {
+    display: block;
+  }
+.nav_item {
+  font-size: 1.5rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+ .nav li:nth-child(3) {
+    padding-right: 9rem;
+  }
+
+
+/* Gallery */
+
+.gallery {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 8.5rem;
+  padding-top: 6rem;
+  background-color: #fff;
+}
+
+
+
+
+.gallery h2 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.gallery_item {
+  margin-bottom: 2.5rem;
+}
+
+
+.gallery_item:last-child {
+  margin-bottom: 0;
+}
+
+  .menu {
+    justify-content: space-around;
+  }
+  .menu li:nth-child(3) {
+    margin-right: 3.5rem;
+  }
+  .gallery_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery_item {
+    flex-basis: 33%;
+  }
+
+  button.To_top_button {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  transform: rotate(90deg);
+
+}
+.To_top_button::before {
+  content: "\2039";
+}
+
+/* FOOTER */
+
+footer.page_footer {
+  background-color: #30455b;
+  height: 8.5rem;
+}
+
+.social_link {
+display: flex;
+justify-content: center;
+}
+.footer_icon {
+display: block;
+width: 4rem;
+height: 4rem;
+margin-right: 1rem;
+margin-bottom: 3.5rem;
+margin-top: 1.5rem;
+}
+
+
+.bg_twitter {
+    background: url('../img/footer_sprites.png') -10px -10px;
+}
+
+.bg_google_plus {
+    background: url('../img/footer_sprites.png') -94px -10px;
+}
+
+
+.bg_facebook {
+    background: url('../img/footer_sprites.png') -10px -94px;
+}
+
+.bg_linkedin {
+    background: url('../img/footer_sprites.png') -94px -94px;
+}
+ 
+.about {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #30455b ;
+   padding: 35px 0;
+ }
+.about_items {
+   display: flex;
+   flex-basis: 100%;
+   justify-content: space-evenly;
+   list-style: none;
+   text-transform: uppercase;
+   font-family: "OpenSans";, sans-serif;
+   color: #fff;
+   font-size: 1rem;
+   padding: 5px;
+ }
+
+.about_item {
+   width: 10%;
+}
+.about_item.contact {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.583;
+}
+.about_link {
+   text-decoration: none;
+   color: #fff;
+}
+
+i.footer_icon {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+ text-align: center;
+  margin-bottom: 0px;
+}
+.design {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
