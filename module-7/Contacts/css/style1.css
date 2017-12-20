@@ -1,0 +1,425 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E0E0E0;
+}
+
+
+
+.wrapper {
+  background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+  background-repeat: no-repeat;
+  max-width: 120rem;
+  min-width: 85rem;
+  margin: auto;
+}
+
+/* Page header */
+
+.page_header {
+    position: relative;
+    padding: 6rem 0;
+    padding-left: 4rem;
+  }
+ 
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #b3c6ff;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Menu */
+
+ul.nav {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover { 
+  color: rgb(38, 53, 85);
+}
+a:active {
+  color: #993399;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.sub_nav {
+    display: none;
+    position: absolute;
+    width: 4.2rem;
+    height: 5rem;
+    top: 7.812rem;
+    left: 16.25rem;
+    background-color: white;
+    text-align: center;
+}
+ul.sub_nav:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff; transparent;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+ul.sub_nav > li {
+    display: block;
+}
+ul.sub_nav > li > a {
+    display: block;
+    color: rgb(107, 116, 136);
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+ul.nav > li:hover > ul.sub_nav {
+    display: block;
+  }
+.nav_item {
+  font-size: 1.5rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+ .nav li:nth-child(3) {
+    padding-right: 9rem;
+  }
+
+
+/* MAIN */
+
+.main {
+  display: flex;
+  width: 64rem;
+  background-color: #fff;
+  margin: auto;
+}
+.contacts_map {
+    width: 70%;
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+    padding:6.25rem 0 8.125rem 3.75rem;
+}
+  .aside {
+    box-sizing: border-box;
+    width: 30%
+    height: auto;
+    margin: 0;
+    padding:6.25rem 3.75rem 8.125rem 2.2rem;
+
+  }
+ 
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    border: 0;
+    width: 100% !important;
+    height: 100% !important;
+  width: 27.56rem;
+  height: 25.87rem;
+}
+.contacts_title {
+  margin-bottom: 3.1rem;
+  font-size: 2.125rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  font-family: 
+}
+.aside_title {
+  font-size: 2.125rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 3.125rem;
+}
+.contacts_items {
+  margin-left: 20px;
+   font-size: 13px;
+  font-family: "Arial";
+  color: rgb(102, 101, 101);
+  line-height: 1.462;
+  display: block;
+  width: 11.25rem;
+}
+.contacts_items li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.contacts_items li:nth-child(6) {
+  margin-bottom: 3.125rem;
+}
+
+.contacts_list {
+  margin-top: 12rem;
+}
+/* FORM */
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+.send {
+  margin-top: 20px;
+  font-size: 15.621px;
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(177, 170, 170);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 1px 0px rgba(222, 219, 219, 0.004);
+  width: 76px;
+  height: 24px;
+}
+
+
+.clear {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 15.621px;
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(177, 170, 170);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 1px 0px rgba(222, 219, 219, 0.004);
+  width: 4.75rem;
+  height: 1.5rem;
+}
+.Message {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 13.538px;
+  font-family: "Arial";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(212, 208, 208);
+  background-color: rgb(252, 250, 250);
+  width: 13.31rem;
+  height: 14.68rem;
+}
+.Subject {
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 13.538px;
+  font-family: "Arial";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(212, 208, 208);
+  background-color: rgb(252, 250, 250);
+  width: 13.31rem;
+  height: 1.875rem;
+}
+.Email {
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 13.538px;
+  font-family: "Arial";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(212, 208, 208);
+  background-color: rgb(252, 250, 250);
+  width: 13.31rem;
+  height: 1.875rem;
+}
+.Name {
+  padding-left: 10px;
+  font-size: 13.538px;
+  font-family: "Arial";
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(212, 208, 208);
+  background-color: rgb(252, 250, 250);
+  width: 13.31rem;
+  height: 1.875rem;
+}
+
+  button.To_top_button {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  transform: rotate(90deg);
+
+}
+.To_top_button::before {
+  content: "\2039";
+}
+
+/* FOOTER */
+
+footer.page_footer {
+  background-color: #30455b;
+  height: 8.5rem;
+}
+
+.social_link {
+display: flex;
+justify-content: center;
+}
+.footer_icon {
+display: block;
+margin-right: 1rem;
+margin-top: 1.5rem;
+}
+
+
+.bg-004 {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.bg-001 {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.png') -94px -10px;
+}
+
+.bg-003 {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.png') -10px -94px;
+}
+
+.bg-002 {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.png') -94px -94px;
+}
+ 
+.about {
+   display:flex;
+  justify-content: space-around;
+   background-color: #30455b ;
+   padding: 35px 0;
+ }
+.about_items {
+   padding: 2rem;
+   text-transform: uppercase;
+   font-family: "OpenSans";, sans-serif;
+   color: #fff;
+   font-size: 1rem;
+   padding: 5px;
+ }
+
+
+.about_item {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.583;
+}
+
+.about_link {
+  margin-bottom: 10px;
+}
+i.footer_icon {
+ text-align: center;
+}
+.design {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
