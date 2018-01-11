@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E0E0E0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+  max-width: 1024px;
+  min-width: 480px;
+  margin: auto;
+}
+
+
+/* Page header */
+
+.page-header {
+   padding: 6rem 0;
+   padding-left: 4rem;
+}
+
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #b3c6ff;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+/* Menu */
+
+.nav {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+ul.sub_nav {
+    display: none;
+    position: absolute;
+    width: 4rem;
+    height: 4.7rem;
+    top: 2.1rem;
+    left: 12rem;
+    font-size: 1rem;
+    background-color: #f2f2f3;
+    text-align: center;
+}
+
+ul.sub_nav:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff; transparent;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+ul.sub_nav > li {
+    display: block;
+}
+ul.sub_nav > li > a {
+    display: block;
+    color: rgb(107, 116, 136);
+    padding-bottom: 5px;
+    background-color: #fff;
+}
+
+ul.nav > li:hover > ul.sub_nav {
+    display: block;
+  }
+.nav_item {
+  font-size: 1.5rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+ 
+
+.nav li {
+  text-transform: uppercase;
+}
+li:hover { 
+  color: rgb(38, 53, 85);
+}
+li:active {
+  color: #993399;
+}
+
+/* Gallery */
+
+.gallery {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.gallery h2 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.gallery-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Media */
+
+
+
+/* от 480 до  768px */
+@media (min-width: 480px) and (max-width: 768px) {
+  .logo {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+   .nav {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .nav li {
+    flex-basis: 33%;
+    text-align: center;
+  }
+  .gallery-item:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  li.nav_item:nth-last-child(2) {
+    display: none;
+  }
+
+.about {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.about li {
+  flex-basis: 33%;
+  text-align: center;
+}
+}
+.nav_item {
+  font-size: 1.5rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+/* 768+ */
+@media (min-width: 768px) {
+  .page-header {
+    position: relative;
+    padding: 4rem 0;
+  }
+  
+  .logo {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+   .nav {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .nav li {
+    flex-basis: 33%;
+    text-align: center;
+  }
+
+
+  li.nav_item:nth-last-child(2) {
+    display: none;
+  }
+  .gallery-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gallery-item {
+    flex-basis: 49%;
+  }
+  .gallery-item:last-child {
+    display: none;
+  }
+}
+
+/* 1024+ */
+@media (min-width: 1024px) {
+    .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav {
+    width: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+  }
+    li.nav_item:nth-last-child(2) {
+    display: block;
+  }
+  .nav li:nth-child(3) {
+    margin-right: 160px;
+  }
+  .gallery-item {
+    flex-basis: 33%;
+  }
+    .gallery-item:last-child {
+    display: block;
+  }
+}
+ button.To_top_button {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  transform: rotate(90deg);
+
+}
+.To_top_button::before {
+  content: "\2039";
+}
+
+/* FOOTER */
+
+footer.page_footer {
+  background-color: #30455b;
+  height: 8.5rem;
+}
+
+.social_link {
+display: flex;
+justify-content: center;
+}
+.footer_icon {
+display: block;
+width: 4rem;
+height: 4rem;
+margin-right: 1rem;
+margin-bottom: 3.5rem;
+margin-top: 1.5rem;
+}
+
+
+.bg_twitter {
+    background: url('../img/footer_sprites.png') -10px -10px;
+}
+
+.bg_google_plus {
+    background: url('../img/footer_sprites.png') -94px -10px;
+}
+
+
+.bg_facebook {
+    background: url('../img/footer_sprites.png') -10px -94px;
+}
+
+.bg_linkedin {
+    background: url('../img/footer_sprites.png') -94px -94px;
+}
+ 
+.about {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #30455b ;
+   padding: 35px 0;
+ }
+.about_items {
+   display: flex;
+   flex-basis: 100%;
+   justify-content: space-evenly;
+   list-style: none;
+   text-transform: uppercase;
+   font-family: "OpenSans";, sans-serif;
+   color: #fff;
+   font-size: 1rem;
+   padding: 5px;
+ }
+
+.about_item {
+   width: 10%;
+}
+.about_item.contact {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.583;
+}
+a.about_link {
+   text-decoration: none;
+   color: #fff;
+   width: 10%;
+}
+
+i.footer_icon {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+ text-align: center;
+  margin-bottom: 0px;
+}
+.design {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
