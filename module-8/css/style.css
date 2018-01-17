@@ -16,8 +16,8 @@ img {
 
 .wrapper {
   background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
-  max-width: 1024px;
-  min-width: 480px;
+  max-width: 120rem;
+  min-width: 20rem;
   margin: auto;
 }
 
