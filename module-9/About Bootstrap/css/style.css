@@ -1,0 +1,601 @@
+
+
+body {
+  background-color: #E0E0E0;
+}
+
+.wrapper {
+  background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+  max-width: 120rem;
+  min-width: 20rem;
+  margin: auto;
+}
+
+/* Page header */
+
+.page_header {
+    position: relative;
+    padding: 6rem 0;
+    margin: auto;
+  }
+ 
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #b3c6ff;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Menu */
+
+ul.nav {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover { 
+  color: rgb(38, 53, 85);
+}
+a:active {
+  color: #993399;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.sub_nav {
+    display: none;
+    position: absolute;
+    width: 4rem;
+    height: 4.3rem;
+    top: 2.5rem;
+    left: 9.5rem;
+    background-color: white;
+    text-align: center;
+}
+ul.sub_nav:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff; transparent;
+    position: absolute;
+    top: -10px;
+    left: 27px;
+}
+ul.sub_nav > li {
+    display: block;
+}
+ul.sub_nav > li > a {
+    display: block;
+    color: rgb(107, 116, 136);
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+ul.nav > li:hover > ul.sub_nav {
+    display: block;
+  }
+.nav_item {
+  font-size: 23.333px;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+ .nav li:nth-child(3) {
+    padding-right: 9.375rem;
+  }
+
+  .menu {
+    justify-content: space-around;
+  }
+  .menu li:nth-child(3) {
+    margin-right: 55px;
+  }
+/* MAIN */
+.container-fluid {
+  
+  background-color: #fff;
+  margin: auto;
+
+}
+.article {
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+    padding:7.5rem 0 0px 3.125rem;
+}
+  .aside {
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    padding:0px 3.125rem 4.6875rem 0px;
+
+  }
+  .article_text {
+    line-height: 1.462;
+    font-size: 13px;
+    font-family:"Arial", sans-serif;
+  }
+
+  .article_text_2 {
+    margin-top: 1.25rem;
+    line-height: 1.462;
+    font-size: 13px;
+    font-family:"Arial", sans-serif;
+    margin-bottom: 3.1rem;
+  }
+
+  .article_text_3 {
+   
+    margin-bottom: 1.5625rem;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+  }
+
+  .article_text_4 {
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 1.462;
+    margin-right: 1.875rem;
+  }
+
+.article_title {
+    margin-bottom: 3.1rem;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+    line-height: 1.2;
+  }
+  .article_title_2 {
+    margin-top: 3.75rem;
+    margin-bottom: 3.1rem;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+    line-height: 1.2;
+  }
+  .article_img {
+    float: left;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .article_Gellentesque {
+    font-size: 15px;
+    margin-bottom: 1.25rem;
+    line-height: 1.267;
+    font-family:"Arial", sans-serif;
+  }
+ .article_title_2 {
+    text-transform: uppercase;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+
+  hr { 
+    border: 1px solid silver;
+  }
+
+.article_list {
+    list-style-type: none;
+    margin-top: 35px;
+  }
+
+  .article_item:nth-last-child(n) {
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    line-height: 1.52;
+    font-family: "Arial";
+  }
+
+  .article_item::before {
+    content: '\2192';
+    color: #38afe5;
+    padding-right: 15px;
+  }
+  .aside_title {
+    width: 14.3rem;
+
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+   ul {
+    counter-reset: section;                
+    list-style-type: none;
+    position: relative;
+  }
+
+  .aside_item::before {
+    display: inline-block;
+    counter-increment: section;  
+    content: counters(section, "article-title") " ";
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    position: absolute;  
+  }
+
+  .aside_Pellentesque {
+    margin-top: 3.1rem;
+    margin-bottom: 1.3rem;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.267;
+    margin-left: 2.5rem;
+  }
+
+.aside_text {
+    margin-left: 2rem;
+    height: auto;
+    width: 100%;
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 1.462;
+    text-align: left;
+    
+  }
+
+.aside_name {
+    margin-top: 1.9rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    font-family: "Arial";
+    line-height: 1.267;
+    margin-left: 2.5rem;
+  }
+.block {
+  padding-bottom: 75px;
+  padding-left: 50px; 
+}
+
+.Testimonial {
+    margin-top: 3.75rem;
+    margin-right: 3.75rem;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "PathwayGothicOne";
+  }
+  .Testimonial_blok{
+  width: 13rem;
+  height: 12rem;
+  background-color: #dfdcdc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-family: "Arial";
+  line-height: 1.267;
+  margin-right: 3.75rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.aside_quote {
+  width: 11rem;
+  height: 9.4rem;
+  text-align: left;
+   font-size: 15px;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.Testimonial_blok:after {
+  content: '';
+  position: absolute;
+  border: 20px solid;
+  border-top-color: #dfdcdc;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px; 
+  border-bottom-color: #fff;
+  border-right-color:#fff;
+  border-left-color: #fff;
+}
+
+
+.aside_quote:before,.aside_quote:after {
+  content: "\201C";
+}
+
+.Mark_Johnson {
+  margin-top: 2.2rem;
+  margin-left: 4.4rem;
+  font-size: 13.33px;
+  font-family: Arial;
+  line-height: 1.425;
+}
+
+.Director_of {
+  font-size: 13px;
+  font-family: "Arial";
+  color: #4e5050;
+  line-height: 1.462;
+  margin-top: 1.25rem;
+  margin-left: 0.8rem;
+}
+.clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  } 
+
+ button.To_top_button {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  transform: rotate(90deg);
+
+}
+.To_top_button::before {
+  content: "\2039";
+}
+
+
+
+
+/* FOOTER */
+
+footer.page_footer {
+  background-color: #30455b;
+  height: auto;
+}
+
+.social_link {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.footer_icon {
+display: block;
+width: 4rem;
+height: 4rem;
+margin-right: 1rem;
+margin-bottom: 3.5rem;
+margin-top: 1.5rem;
+}
+
+
+.bg_twitter {
+    background: url('../img/footer_sprites.png') -10px -10px;
+}
+
+.bg_google_plus {
+    background: url('../img/footer_sprites.png') -94px -10px;
+}
+
+
+.bg_facebook {
+    background: url('../img/footer_sprites.png') -10px -94px;
+}
+
+.bg_linkedin {
+    background: url('../img/footer_sprites.png') -94px -94px;
+}
+
+.about {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #30455b ;
+   padding: 35px 0;
+ }
+.about_items {
+   display: flex;
+   flex-basis: 100%;
+   justify-content: space-evenly;
+   list-style: none;
+   text-transform: uppercase;
+   font-family: "OpenSans";, sans-serif;
+   color: #fff;
+   font-size: 1rem;
+   padding: 5px;
+ }
+
+.about_item {
+   width: 10%;
+}
+.about_item.contact {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.583;
+}
+
+
+.about_link {
+   text-decoration: none;
+   color: #fff;
+}
+
+i.footer_icon {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+  margin-bottom: 0px;
+}
+.design {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* Media */
+
+
+
+/* от 480 до  768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .logo {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+   .nav {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+     top: 167%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  .nav li {
+    flex-basis: 33%;
+    text-align: center;
+  }
+ 
+.about {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+  .aside_title {
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+  }
+.aside_item:last-child {
+  margin-bottom: 3.25rem;
+}
+
+.nav_item {
+  font-size: 1.5rem;
+  font-family: "PathwayGothicOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.Testimonial,.Mark_Johnson,.Director_of {
+  text-align: center;
+}
+.Testimonial_blok {
+  left: 50%;
+}
+}
+
+/* 768+ */ 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+   .nav {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+     top: 167%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  .nav li {
+    flex-basis: 33%;
+    text-align: center;
+  }
+  
+    li.nav_item:nth-last-child(2) {
+    display: block;
+  }
+  .aside_list {
+    display: flex; 
+  }
+  .aside_title {
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .aside_Pellentesque {
+    margin-top: 1.9rem;
+    margin-bottom: 1.25rem;
+}
+}
+/* 992+ */
+@media (min-width: 992px) {
+    .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   .nav {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+     top: 167%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav li {
+    flex-basis: 33%;
+    text-align: center;
+  }
+  .aside_list {
+    display: block;
+  }
+    li.nav_item:nth-last-child(2) {
+    display: block;
+  }
+}
+
+/* 1024+ */
+   @media (min-width: 1024px) {
+    .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav {
+    width: 100%;
+    margin: 0px;
+    flex-wrap: nowrap;
+  }
+.aside_list {
+  display: block;
+}
+}
+
