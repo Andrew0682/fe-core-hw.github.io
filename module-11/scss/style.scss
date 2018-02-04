@@ -1,0 +1,374 @@
+$primary-dark-color: #993399;
+$primary-light-color: #fff;
+$primary-accent-color: #009688;
+$container-width: 120rem;
+$container-width-min: 20rem;
+$primary-font-stack: "Arial",
+sans-serif;
+$secondary-font-stack: "PathwayGothicOne",
+sans-serif;
+$primary-font-size: 1rem;
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: $primary-light-color;
+	font-family: $primary-font-stack;
+    line-height: 1;
+}
+.wrapper {
+	background-image: url(https://wallpaperscraft.com/image/ocean_sea_gulf_waves_blue_water_coast_beach_48330_3840x2160.jpg);
+	margin: auto;
+	max-width: $container-width;
+	min-width: $container-width-min;	
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* HEADER */
+.page__header {
+   padding: 6rem 0;
+   padding-left: 4rem;
+@media (min-width: 768px) {
+  position: relative;
+  padding: 4rem 0;
+}  
+}   
+/* Logo */
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #b3c6ff;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+@media (min-width: 480px) and (max-width: 768px) {
+  margin: auto;
+  margin-bottom: 30px;
+}  
+@media (min-width: 768px) { 
+  margin: auto;
+  margin-bottom: 30px;
+}  
+@media (min-width: 1024px) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}  
+}
+
+a {
+  text-decoration: none;
+}
+/* Menu */
+
+.nav {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  position: relative;
+@media (min-width: 480px) and (max-width: 768px) {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  flex-basis: 33%;
+  text-align: center;
+}  
+@media (min-width: 768px) { 
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}  
+@media (min-width: 1024px) {
+  width: 100%;
+  margin: auto;
+  flex-wrap: nowrap;
+&:nth-child(3) {
+  margin-right: 160px;
+}
+}
+
+& > li:hover > ul.sub__nav {
+    display: block;
+}  
+}
+ul.sub__nav {
+  display: none;
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  font-size: 1rem;
+  background-color: #f2f2f3;
+  text-align: center;
+}
+ul.sub__nav:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 8.7px 5px;
+  border-color: transparent transparent $primary-light-color transparent;
+  position: absolute;
+  top: -10px;
+  left: 27px;
+& > li {
+  display: block;
+}
+& > li > a {
+  display: block;
+  color: $primary-accent-color;
+  padding-bottom: 5px;
+  background-color: $primary-light-color;
+}    
+}
+.nav__item {
+  font-size: 1.5rem;
+  font-family: $secondary-font-stack;
+  color: $primary-light-color;
+  line-height: 1.2;
+  &:hover {
+  color: $primary-dark-color;
+  }
+  &:active {
+  color: $primary-accent-color;
+  }
+@media (min-width: 480px) and (max-width: 768px) {
+li &:nth-last-child(2) {
+  display: none;
+}
+}  
+@media (min-width: 768px) { 
+li &:nth-last-child(2) {
+  display: none;
+}
+}  
+@media (min-width: 1024px) {
+li &:nth-last-child(2) {
+  display: block;
+}
+}   
+}
+/* Gallery */
+.gallery__section {
+  padding: 1.25rem;
+  background-color: $primary-light-color;
+}
+@media (min-width: 768px) { 
+
+.section__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}
+.section__title {
+  margin-top: 3.75rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.gallery__item {
+  margin-bottom: 1.25rem;
+&:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+&:nth-last-child(-n + 3) {
+  display: none;
+}
+}  
+@media (min-width: 768px) { 
+  flex-basis: 49%;
+&:last-child {
+  display: none;
+}
+}   
+@media (min-width: 1024px) {
+ flex-basis: 33%;
+&:last-child {
+  display: block;
+}  
+}
+}
+.gallery__item:before {
+   display: block;
+   position: absolute;
+   width: 32px;
+   height: 28px;
+   top: 40%;
+   left: 50%;
+   margin: -14px 0 0 -10px;
+   background: url("../img/zoom-icon.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: '';
+   opacity: 0;
+   z-index: 1;
+   transition: all 0.3s linear;  
+} 
+.gallery__item:hover:before {
+   top: 50%;
+   opacity: 1;
+} 
+.gallery__item:after {
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 98%;
+   top: 0;
+   background: rgba(0, 0, 0, 0.5);
+   content: '';
+   opacity: 0;
+   transition: all 0.3s linear;
+}
+.gallery__item:hover:after {
+   opacity: 1;
+  }
+.gallery__item {
+   position: relative;
+   overflow: hidden;
+}
+button.btn {
+  border-radius: 50%;
+  position: fixed;
+  background-color: #38afe5;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  transform: rotate(90deg);
+&::before {
+  content: "\2039";
+}
+}
+/* FOOTER */
+
+footer.page__footer {
+  background-color: #30455b;
+  height: 8.5rem;
+}
+.about {
+  display:flex;
+  justify-content: space-around;
+  background-color: #30455b ;
+  padding: 2.1875rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-basis: 33%;
+  text-align: center;
+@media (min-width: 480px) and (max-width: 768px) {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+ flex-basis: 33%;
+ text-align: center;
+}
+}
+.about__items {
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "OpenSans", sans-serif;
+  color: $primary-light-color;
+  font-size: 1rem;
+  padding: 5px;
+}
+.about__descr.about__descr__contact {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.583;
+  text-decoration: none;
+  color: $primary-light-color;
+  width: 10%;
+}
+.design__descr {
+  font-size: 12px;
+  font-family: $primary-font-stack;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.user-card__socials {
+  display: flex;
+  justify-content: center;
+}
+.user-card__icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  fill: $primary-light-color;
+  margin-right: 1rem;
+  margin-bottom: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.user-card__socials {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.user-card__link {
+  margin-right: 0.5rem;
+}
+.user-card__link--last:last-child {
+  margin-right: 0;
+}
+.user-card__link--hover:hover > .user-card__icon {
+  fill: #f20739;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
